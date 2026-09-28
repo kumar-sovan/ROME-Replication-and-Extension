@@ -24,10 +24,24 @@ The project is being developed as an open research log, with experimental result
 
 ## Motivation
 
-Large language models store substantial amounts of factual
-knowledge in their parameters. An important research question is
-whether specific pieces of knowledge can be modified without
-retraining the entire model.
+Large language models store substantial amounts of factual knowledge in their parameters. An important research question is
+whether specific pieces of knowledge can be modified without mretraining the entire model.
 
-ROME provides an influential approach to this problem by treating
-knowledge editing as a targeted modification of model parameters.
+ROME provides an influential approach to this problem by treating knowledge editing as a targeted modification of model parameters.
+
+## Current Status
+
+### Environment Preparation — In Progress
+
+- [x] Original ROME repository studied
+- [x] ROME repository cloned
+- [x] Google Colab T4 environment prepared
+- [x] Miniconda installed
+- [x] Python 3.9.7 environment created
+- [x] PyTorch 1.10.2 installed
+- [x] CUDA 11.3 environment verified
+- [x] Tesla T4 detected by PyTorch
+- [x] MKL/OpenMP compatibility issue investigated
+- [x] NumPy 1.22.1 installed
+- [x] SciPy 1.7.3 installed
+- [x] Key historical dependencies being checked
