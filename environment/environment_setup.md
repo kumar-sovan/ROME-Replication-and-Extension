@@ -59,3 +59,13 @@ scripts/rome.yml
 scripts/setup_conda.sh
 ```
 **rome.yml**, the files specifies the software versions expected by the original ROME implementation. 
+
+Important core dependencies include:
+```bash
+Python      3.9.7
+pip         21.2.4
+PyTorch     1.10.2
+CUDA Toolkit 11.3.1
+```
+This file also contains a large list of Python packages installed through pip. 
+
