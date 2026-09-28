@@ -14,3 +14,10 @@ The research workflow is divided into three major stages:
    - Investigate how causal tracing identifies important components of a transformer.
    - Understand how ROME performs a rank-one parameter update.
    - Analyze the effects of editing on the target knowledge, generalization, and specificity.
+3. **Extend**
+   - Adapt the methodology to a modern language model.
+   - Evaluate whether the original observations and editing
+     behavior remain consistent.
+   - Investigate limitations and possible improvements.
+  
+The project is being developed as an open research log, with experimental results, implementation notes, debugging observations, and weekly progress documented throughout the process.
