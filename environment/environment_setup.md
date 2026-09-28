@@ -12,6 +12,7 @@ The official ROME repository was cloned into the Google Colab environment:
 
 ```bash
 !git clone https://github.com/kmeng01/rome.git
+```
 
 
 ## 2. Inspect the Initial Colab Environment
