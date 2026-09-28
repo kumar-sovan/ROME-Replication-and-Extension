@@ -50,3 +50,12 @@ GPU: Tesla T4
 ```
 The initial environment was substantially newer than the environment specified by the original ROME repository.
 Therefore, instead of modifying the default Colab Python environment, a separate Conda environment was planned for ROME.
+
+## 3. Inspect the Original ROME Environment Configuration
+Before installing dependencies, the repository's environment configuration was inspected. 
+Two important files were examined:
+```bash
+scripts/rome.yml
+scripts/setup_conda.sh
+```
+**rome.yml**, the files specifies the software versions expected by the original ROME implementation. 
