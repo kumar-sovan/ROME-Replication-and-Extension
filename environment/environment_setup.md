@@ -58,7 +58,7 @@ Two important files were examined:
 scripts/rome.yml
 scripts/setup_conda.sh
 ```
-`###rome.yml`, the files specifies the software versions expected by the original ROME implementation. 
+**`rome.yml`**, the files specifies the software versions expected by the original ROME implementation. 
 
 Important core dependencies include:
 ```bash
