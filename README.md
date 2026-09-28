@@ -21,3 +21,13 @@ The research workflow is divided into three major stages:
    - Investigate limitations and possible improvements.
   
 The project is being developed as an open research log, with experimental results, implementation notes, debugging observations, and weekly progress documented throughout the process.
+
+## Motivation
+
+Large language models store substantial amounts of factual
+knowledge in their parameters. An important research question is
+whether specific pieces of knowledge can be modified without
+retraining the entire model.
+
+ROME provides an influential approach to this problem by treating
+knowledge editing as a targeted modification of model parameters.
