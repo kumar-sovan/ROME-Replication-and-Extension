@@ -40,3 +40,13 @@ print("CUDA available:", torch.cuda.is_available())
 if torch.cuda.is_available():
     print("GPU:", torch.cuda.get_device_name(0))
 ```
+
+```bash
+Python: 3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]
+PyTorch: 2.11.0+cu128
+Transformers: 5.16.1
+CUDA available: True
+GPU: Tesla T4
+```
+The initial environment was substantially newer than the environment specified by the original ROME repository.
+Therefore, instead of modifying the default Colab Python environment, a separate Conda environment was planned for ROME.
