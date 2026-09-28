@@ -45,3 +45,9 @@ ROME provides an influential approach to this problem by treating knowledge edit
 - [x] NumPy 1.22.1 installed
 - [x] SciPy 1.7.3 installed
 - [x] Key historical dependencies being checked
+
+
+## References
+
+- Meng et al., *Locating and Editing Factual Associations in GPT*
+- Official ROME implementation: https://github.com/kmeng01/rome
