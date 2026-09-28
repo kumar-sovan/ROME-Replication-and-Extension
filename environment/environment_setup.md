@@ -68,7 +68,7 @@ pip         21.2.4
 PyTorch     1.10.2
 CUDA Toolkit 11.3.1
 ```
-This file also contains a large list of Python packages installed through pip. 
+This file also contains a large list of Python packages installed through pip. There is a lot of difference between original ROME dependencies and our current Colab environment.
 
 **`setup_conda.sh`**
 This setup script was also inspected to understand the assumptions made by the ROME authors.
@@ -79,4 +79,4 @@ The script checks, among other things:
 - CUDA installation: CUDA_DIR="/usr/local/cuda-11.1", specifically checks for this CUDA version
 - ROME environment configuration
 - The `rome.yml` convironment specification
-***
+
