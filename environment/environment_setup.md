@@ -58,7 +58,8 @@ Two important files were examined:
 scripts/rome.yml
 scripts/setup_conda.sh
 ```
-**`rome.yml`**, the files specifies the software versions expected by the original ROME implementation. 
+**`rome.yml`**
+The file specifies the software versions expected by the original ROME implementation. 
 
 Important core dependencies include:
 ```bash
@@ -69,4 +70,13 @@ CUDA Toolkit 11.3.1
 ```
 This file also contains a large list of Python packages installed through pip. 
 
+**`setup_conda.sh`**
+This setup script was also inspected to understand the assumptions made by the ROME authors.
+
+The script checks, among other things:
+- Operating system: Conda setup script is only available on Linux and Mac.
+- Conda availability
+- CUDA installation: CUDA_DIR="/usr/local/cuda-11.1", specifically checks for this CUDA version
+- ROME environment configuration
+- The `rome.yml` convironment specification
 ***
