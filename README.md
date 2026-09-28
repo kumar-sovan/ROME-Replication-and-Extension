@@ -10,3 +10,7 @@ The research workflow is divided into three major stages:
    - Reconstruct the required software environment.
    - Reproduce the causal tracing experiments.
    - Verify the original model-editing results.
+2. **Understand & Analyze**
+   - Investigate how causal tracing identifies important components of a transformer.
+   - Understand how ROME performs a rank-one parameter update.
+   - Analyze the effects of editing on the target knowledge, generalization, and specificity.
