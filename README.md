@@ -6,4 +6,7 @@ This project is a research-oriented replication and extension of **ROME**, a met
 
 The research workflow is divided into three major stages:
 1. **Reproduce**
-   - 
+   - Study the original ROME paper and implementation.
+   - Reconstruct the required software environment.
+   - Reproduce the causal tracing experiments.
+   - Verify the original model-editing results.
