@@ -37,7 +37,8 @@ ROME provides an influential approach to this problem by treating knowledge edit
 - [x] ROME repository cloned
 - [x] Google Colab T4 environment prepared
 - [x] Conda installation, which allows us to create a separate environment to avoid version and dependencies conflict. 
-- Miniconda installed, which keeps the installation smaller and more controlled. 
+- Miniconda installed, which keeps the installation smaller and more controlled.
+- Creating a test environment rome_test with python 3.9.7, pytorch 1.10.2 and cudatoolkit 11.3.1 
 - [x] Python 3.9.7 environment created
 - [x] PyTorch 1.10.2 installed
 - [x] CUDA 11.3 environment verified
