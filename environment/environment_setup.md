@@ -112,8 +112,8 @@ Before attempting to reproduce the complete ROME environment, a separate rome_te
 !/content/miniconda3/bin/conda create -n rome_test python=3.9.7 pytorch=1.10.2 cudatoolkit=11.3.1 -c pytorch -y
 ```
 The goal was to verify the compatibility of the most important component:
-```text
 - python 3.9.7
 - pytorch 1.10.2
 - cudatoolkit 11.3.1
-```
+
+
