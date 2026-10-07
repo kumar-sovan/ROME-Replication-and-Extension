@@ -83,11 +83,16 @@ The script checks, among other things:
 
 ## 5. Install Miniconda in Google Colab
 
-Since the default Colab Python environment did not match the
-historical ROME requirements, Miniconda was installed separately.
+Since the default Colab Python environment did not match the historical ROME requirements, Miniconda was installed separately.
 
 Miniconda was installed at:
-
 ```text
 /content/miniconda3
+```
+Installation command:
+```bash
+!wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+    -O /content/miniconda.sh
 
+!bash /content/miniconda.sh -b -p /content/miniconda3
+```
