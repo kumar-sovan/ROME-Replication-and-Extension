@@ -16,10 +16,8 @@ The official ROME repository was cloned into the Google Colab environment:
 
 
 ## 2. Inspect the Initial Colab Environment
-Before modifying the environment, the existing Google Colab
-configuration was checked.
-The purpose was to determine whether the default Colab environment
-already satisfied the requirements of the original ROME implementation.
+Before modifying the environment, the existing Google Colab configuration was checked.
+The purpose was to determine whether the default Colab environment already satisfied the requirements of the original ROME implementation.
 The following components were checked:
 - Python version
 - PyTorch version
@@ -80,5 +78,16 @@ The script checks, among other things:
 - CUDA installation: `CUDA_DIR="/usr/local/cuda-11.1"`, specifically checks for this CUDA version
 - ROME environment configuration
 - The `rome.yml` convironment specification
-  
+
+  ---
+
+## 5. Install Miniconda in Google Colab
+
+Since the default Colab Python environment did not match the
+historical ROME requirements, Miniconda was installed separately.
+
+Miniconda was installed at:
+
+```text
+/content/miniconda3
 
