@@ -139,4 +139,15 @@ However the first Pytorch import did not succeed because of the runtime compatib
 ```bash
 ImportError: /content/miniconda3/envs/rome_test/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so: undefined symbol: iJIT_NotifyEvent
 ```
+### 7.1 What does the error mean?
 
+The error occured while loading Pytorch native CPU's library:
+```bash
+libtorch_cpu.so
+```
+The library expected a symbol named: 
+```bash
+iJIT_NofifyEvent
+```
+but the required symbol could not be resolve by the labraries available in the environment. 
+So Pytorch was installed, but one of its binary dependencies was not compatible with run time libraries present in the environment. 
