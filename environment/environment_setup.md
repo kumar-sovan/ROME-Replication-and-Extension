@@ -116,4 +116,27 @@ The goal was to verify the compatibility of the most important component:
 - pytorch 1.10.2
 - cudatoolkit 11.3.1
 
+## 7. Verify the core Pytorch environment
+
+The first verification checked whether the installed Pytorch installation could actually run and access the GPU
+
+```bash
+!/content/miniconda3/envs/rome_test/bin/python -c \
+"import torch;
+print('PyTorch:', torch.__version__);
+print('CUDA available:', torch.cuda.is_available());
+print('CUDA version:', torch.version.cuda);
+print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else None)"
+```
+The target configuration was
+```text
+PyTorch: 1.10.2
+CUDA available: True
+CUDA version: 11.3
+GPU: Tesla T4
+```
+However the first Pytorch import did not succeed because of the runtime compatibility problem involving with older Pytorch binary and newer numerical libraries available in the environment.
+```bash
+ImportError: /content/miniconda3/envs/rome_test/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so: undefined symbol: iJIT_NotifyEvent
+```
 
