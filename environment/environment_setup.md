@@ -96,3 +96,24 @@ Installation command:
 
 !bash /content/miniconda.sh -b -p /content/miniconda3
 ```
+
+The Conda installation was verified using:
+```bash
+!/content/miniconda3/bin/conda --version
+```
+
+This will provide a separate Conda installation without modifying the default Colab environment.
+
+--- 
+## 6. Create an isolated ROME test environment
+
+Before attempting to reproduce the complete ROME environment, a separate rome_test environment was created.
+```bash
+!/content/miniconda3/bin/conda create -n rome_test python=3.9.7 pytorch=1.10.2 cudatoolkit=11.3.1 -c pytorch -y
+```
+The goal was to verify the compatibility of the most important component:
+```text
+- python 3.9.7
+- pytorch 1.10.2
+- cudatoolkit 11.3.1
+```
